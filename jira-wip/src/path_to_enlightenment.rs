@@ -54,8 +54,9 @@ mod delete_and_update;
 mod store_recap;
 
 #[path = "koans/03_cli/00_cli.rs"]
-mod cli;
+pub mod cli;
 
 #[path = "koans/03_cli/01_persistence.rs"]
-mod persistence;
-
+pub mod persistence;
+#[path = "koans/03_cli/02_the_end.rs"]
+pub mod the_end;
