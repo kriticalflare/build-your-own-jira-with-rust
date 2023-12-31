@@ -4,7 +4,7 @@
 ///
 /// Then get ready to dive in the next section!
 
-#[derive(PartialEq, Debug)]
+#[derive(Clone, PartialEq, Debug)]
 pub enum Status {
     ToDo,
     InProgress,
@@ -12,6 +12,7 @@ pub enum Status {
     Done,
 }
 
+#[derive(Clone, Debug, PartialEq)]
 pub struct Ticket {
     title: String,
     description: String,
